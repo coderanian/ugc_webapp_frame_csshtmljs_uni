@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>IAM - ESA 1</title>
+    <!-- add style -->
+    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+    <link rel="stylesheet" href="css/thumbnail.css"/>
+    <!-- add interaction control -->
+    <script type="application/javascript" src="js/jsl.js"></script>
+    <script type="application/javascript" src="js/jsr.js"></script>
+    <!-- add the "library" script wrapping XMLHttpRequest -->
+    <script type="application/javascript" src="js/lib/xhr.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <img id="menu" class="icon" src="css/img/glyphicons/png/glyphicons-517-menu-hamburger.png"/>
+        <h3 class="title">Medien</h3>
+    </div>
+    <div>
+        <img id="view" class="icon" src="css/img/glyphicons/png/glyphicons-115-list.png"/>
+        <img id="add" class="icon" src="css/img/glyphicons/png/glyphicons-433-plus.png"/>
+    </div>
+</header>
+
+<main>
+    <div></div>
+    <section id="content" class="listView">
+        <!--Add new entries via json list-->
+    </section>
+</main>
+
+<footer>
+    <img id="login" class="icon" src="css/img/glyphicons/png/glyphicons-387-log-in.png"/>
+    <img id="refresh" class="icon" src="css/img/glyphicons/png/glyphicons-82-refresh.png"/>
+</footer>
+
+</body>
+
+<template id="entryTemplate">
+    <section class="entry">
+        <section class="imgContainer">
+            <img class="cover" src="">
+        </section>
+        <section class="entryDetails">
+            <section class="metadata">
+                <h5 class="source"></h5>
+                <h5 class="date"></h5>
+            </section>
+            <h3 class="title"></h3>
+            <section class="playCnt">
+                <img class="icon" src="css/img/glyphicons/png/glyphicons-174-play.png"/>
+                <h5 class="tags"></h5>
+            </section>
+        </section>
+        <img class="options icon" src="css/img/glyphicons/png/glyphicons-518-option-vertical.png"/>
+    </section>
+</template>
+
+</html>
